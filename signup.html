@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start free trial · QuoteFlowin</title>
+  <meta name="description" content="Start your QuoteFlowin free trial.">
+  <link rel="canonical" href="https://quoteflowin.com/signup.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="QuoteFlowin">
+  <meta property="og:title" content="Start free trial · QuoteFlowin">
+  <meta property="og:description" content="Start your QuoteFlowin free trial.">
+  <meta property="og:url" content="https://quoteflowin.com/signup.html">
+  <meta name="theme-color" content="#09090b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="logo-mark">Q</span>QuoteFlowin</a>
+    <nav class="nav">
+      <a href="how-it-works.html">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="docs.html">Docs</a>
+      <a class="btn btn-primary btn-sm" href="signup.html?plan=trial">Start free trial</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head center" style="padding-bottom:88px">
+    <div class="backdrop"><div class="grid"></div></div>
+    <div class="wrap">
+      <span class="eyebrow" id="plan-label">Free trial</span>
+      <h1>Let's get you <span class="serif">set up</span></h1>
+      <p class="lead">We're onboarding new workspaces one by one. Email us your Twenty workspace URL and we'll get you set up.</p>
+      <div class="cta-row" style="justify-content:center">
+        <a class="btn btn-primary" id="signup-mail" href="mailto:info@quoteflowin.com?subject=QuoteFlowin%20-%20Free%20trial">Email info@quoteflowin.com</a>
+        <a class="btn btn-ghost" href="pricing.html">Back to pricing</a>
+      </div>
+      <p class="fine">14-day free trial · No credit card</p>
+    </div>
+  </section>
+</main>
+<script>
+  (function () {
+    var names = { trial: "Free trial", monthly: "Monthly plan", annual: "Annual plan", lifetime: "Early Bird Lifetime" };
+    var plan = new URLSearchParams(location.search).get("plan");
+    var name = names[plan] || names.trial;
+    document.getElementById("plan-label").textContent = name;
+    document.getElementById("signup-mail").href =
+      "mailto:info@quoteflowin.com?subject=" + encodeURIComponent("QuoteFlowin - " + name);
+  })();
+</script>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark">Q</span>QuoteFlowin</a>
+        <p style="margin-top:12px;max-width:320px">Itemized quotes on your CRM deals. Send a link, the client accepts, the deal is won.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="signup.html?plan=trial">Free trial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="docs.html">Getting started</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+          <li><a href="mailto:info@quoteflowin.com">info@quoteflowin.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>QuoteFlowin · by Winayakk One</span>
+      <span>Works inside Twenty CRM. Not affiliated with Twenty.</span>
+    </div>
+    <div class="wordmark" aria-hidden="true">QuoteFlowin</div>
+  </div>
+</footer>
+
+</body>
+</html>

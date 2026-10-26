@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docs · QuoteFlowin</title>
+  <meta name="description" content="Getting started with QuoteFlowin: install it in Twenty and send your first quote.">
+  <link rel="canonical" href="https://quoteflowin.com/docs.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="QuoteFlowin">
+  <meta property="og:title" content="Docs · QuoteFlowin">
+  <meta property="og:description" content="Getting started with QuoteFlowin: install it in Twenty and send your first quote.">
+  <meta property="og:url" content="https://quoteflowin.com/docs.html">
+  <meta name="theme-color" content="#09090b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="logo-mark">Q</span>QuoteFlowin</a>
+    <nav class="nav">
+      <a href="how-it-works.html">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="docs.html" aria-current="page">Docs</a>
+      <a class="btn btn-primary btn-sm" href="signup.html?plan=trial">Start free trial</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap docs-layout">
+    <nav class="docs-nav" aria-label="Docs">
+      <a href="#install">Install</a>
+      <a href="#setup">Set up your details</a>
+      <a href="#first-quote">Create your first quote</a>
+      <a href="#send">Send it</a>
+      <a href="#accept">When the client accepts</a>
+      <a href="#limits">Current limitations</a>
+      <a href="#help">Get help</a>
+    </nav>
+
+    <article class="docs-body">
+      <span class="eyebrow">Getting started</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.2rem)">Your first quote <span class="serif" style="color:var(--accent)">in 10 minutes</span></h1>
+      <p class="lead">Install QuoteFlowin in your Twenty workspace, add your company details, and send a quote from a deal.</p>
+
+      <h2 id="install">1. Install</h2>
+      <ol>
+        <li>Start your <a href="signup.html?plan=trial">free trial</a>.</li>
+        <li>In Twenty, open <strong>Settings → Apps</strong>.</li>
+        <li>Find <strong>QuoteFlowin</strong> and click <strong>Install</strong>.</li>
+        <li>Open any deal (opportunity). You'll see a new <strong>Quote</strong> tab.</li>
+      </ol>
+      <div class="note">Self-hosted Twenty? It works the same way. Your server must be reachable from the internet so clients can open quote links.</div>
+
+      <h2 id="setup">2. Set up your details</h2>
+      <p>Go to <strong>Settings → Apps → QuoteFlowin → Variables</strong>. Everything is optional, but these make your quotes look like yours:</p>
+      <ul>
+        <li><strong>Seller name</strong> and <strong>logo URL</strong>. Leave empty to use your workspace name and logo.</li>
+        <li><strong>Address, email, phone, website</strong> for the quote footer.</li>
+        <li><strong>Tax ID</strong>, such as a VAT or GST number.</li>
+        <li><strong>Brand color</strong> as a hex code, for example <code>#1F6F4A</code>.</li>
+        <li><strong>Default message</strong> and <strong>default terms</strong> for new quotes.</li>
+        <li><strong>Stage for accepted deals</strong>. Defaults to <code>CUSTOMER</code>. Change it to match your pipeline's won stage.</li>
+      </ul>
+
+      <h2 id="first-quote">3. Create your first quote</h2>
+      <ol>
+        <li>Open a deal and go to the <strong>Quote</strong> tab.</li>
+        <li>Add line items: a description, quantity and price for each.</li>
+        <li>Set the currency, a discount, tax, and how long the quote is valid (7, 14, 30, 60 or 90 days, or no expiry).</li>
+        <li>Add a message to your client and your terms if needed.</li>
+        <li>Check the live preview. It's exactly what your client will see.</li>
+        <li>Click <strong>Next: Review &amp; share</strong>. QuoteFlowin saves the quote and shows a summary next to the full preview.</li>
+      </ol>
+
+      <h2 id="send">4. Send it</h2>
+      <ol>
+        <li>Click <strong>Send quote</strong> and confirm. The quote gets its number (for example Q-0003), a private link, and a ready-written email.</li>
+        <li>Click <strong>Open in email app</strong> to send from your own mailbox, or <strong>Copy email</strong> to paste it anywhere.</li>
+        <li>The quote is locked while it's out. To change it, withdraw it. The old link stops working.</li>
+      </ol>
+      <p>The Quote tab shows when your client first opens the link. Your own clicks don't count.</p>
+
+      <h2 id="accept">5. When the client accepts</h2>
+      <p>Your client types their name and clicks <strong>Accept quote</strong>. Then:</p>
+      <ul>
+        <li>The quote is marked <strong>Accepted</strong> with their name.</li>
+        <li>The deal moves to your won stage.</li>
+        <li>The deal amount is set to the quote total.</li>
+        <li>The event appears on the deal's timeline.</li>
+      </ul>
+      <p>If they decline, you'll see their reason and can <strong>Revise and resend</strong>.</p>
+
+      <h2 id="limits">Current limitations</h2>
+      <ul>
+        <li>Discount and tax apply to the whole quote, not individual lines.</li>
+        <li>QuoteFlowin writes the email but doesn't send it. It opens in your email app so replies come to you.</li>
+        <li>No e-signature or online payment yet.</li>
+      </ul>
+
+      <h2 id="help">Get help</h2>
+      <p>Email <a href="mailto:info@quoteflowin.com">info@quoteflowin.com</a>, or open an issue on <a href="https://github.com/anudeepkaur3/quoteflow/issues">GitHub</a>.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark">Q</span>QuoteFlowin</a>
+        <p style="margin-top:12px;max-width:320px">Itemized quotes on your CRM deals. Send a link, the client accepts, the deal is won.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="signup.html?plan=trial">Free trial</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="docs.html">Getting started</a></li>
+          <li><a href="pricing.html#faq">FAQ</a></li>
+          <li><a href="mailto:info@quoteflowin.com">info@quoteflowin.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>QuoteFlowin · by Winayakk One</span>
+      <span>Works inside Twenty CRM. Not affiliated with Twenty.</span>
+    </div>
+    <div class="wordmark" aria-hidden="true">QuoteFlowin</div>
+  </div>
+</footer>
+
+</body>
+</html>
