@@ -43,11 +43,12 @@
       <span class="eyebrow" id="plan-label">Free trial</span>
       <h1>Let's get you <span class="serif">set up</span></h1>
       <p class="lead">We're onboarding new workspaces one by one. Email us your Twenty workspace URL and we'll get you set up.</p>
+      <p id="plan-note" style="margin:14px 0 0">You picked the <strong id="plan-name" style="color:var(--ink)">Free trial</strong>. The email below already says so; just add your workspace URL.</p>
       <div class="cta-row" style="justify-content:center">
-        <a class="btn btn-primary" id="signup-mail" href="mailto:info@quoteflowin.com?subject=QuoteFlowin%20-%20Free%20trial">Email info@quoteflowin.com</a>
+        <a class="btn btn-primary" id="signup-mail" href="mailto:info@quoteflowin.com?subject=QuoteFlowin%20Free%20trial%20%E2%80%93%20my%20workspace%20URL">Email info@quoteflowin.com</a>
         <a class="btn btn-ghost" href="pricing.html">Back to pricing</a>
       </div>
-      <p class="fine">14-day free trial · No credit card</p>
+      <p class="fine">14-day free trial or 10 quotes · No credit card</p>
     </div>
   </section>
 </main>
@@ -57,8 +58,12 @@
     var plan = new URLSearchParams(location.search).get("plan");
     var name = names[plan] || names.trial;
     document.getElementById("plan-label").textContent = name;
+    document.getElementById("plan-name").textContent = name;
+    // The plan travels in the subject and body, so each request arrives tagged with what was clicked.
+    var subject = "QuoteFlowin " + name + " – my workspace URL";
+    var body = "Plan: " + name + "\nTwenty workspace URL: \nTwenty Cloud or self-hosted: \n";
     document.getElementById("signup-mail").href =
-      "mailto:info@quoteflowin.com?subject=" + encodeURIComponent("QuoteFlowin - " + name);
+      "mailto:info@quoteflowin.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   })();
 </script>
 
