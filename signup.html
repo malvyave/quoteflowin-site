@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start free trial · QuoteFlowin</title>
-  <meta name="description" content="Start your QuoteFlowin free trial.">
+  <title>Install · QuoteFlowin</title>
+  <meta name="description" content="Install QuoteFlowin in your Twenty workspace and start your free trial.">
   <link rel="canonical" href="https://quoteflowin.com/signup.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="QuoteFlowin">
   <meta property="og:title" content="Start free trial · QuoteFlowin">
-  <meta property="og:description" content="Start your QuoteFlowin free trial.">
+  <meta property="og:description" content="Install QuoteFlowin in your Twenty workspace and start your free trial.">
   <meta property="og:url" content="https://quoteflowin.com/signup.html">
   <meta name="theme-color" content="#09090b">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -41,29 +41,25 @@
     <div class="backdrop"><div class="grid"></div></div>
     <div class="wrap">
       <span class="eyebrow" id="plan-label">Free trial</span>
-      <h1>Let's get you <span class="serif">set up</span></h1>
-      <p class="lead">We're onboarding new workspaces one by one. Email us your Twenty workspace URL and we'll get you set up.</p>
-      <p id="plan-note" style="margin:14px 0 0">You picked the <strong id="plan-name" style="color:var(--ink)">Free trial</strong>. The email below already says so; just add your workspace URL.</p>
+      <h1>Install <span class="serif">QuoteFlowin</span></h1>
+      <p class="lead">Add QuoteFlowin to your Twenty workspace. Your free trial starts right away: 14 days or 10 quotes, no card needed.</p>
+      <p id="plan-note" style="margin:14px 0 0;display:none">You picked <strong id="plan-name" style="color:var(--ink)"></strong>. After installing, open any deal's <strong style="color:var(--ink)">Quote</strong> tab and click <strong style="color:var(--ink)">Choose a plan</strong>.</p>
       <div class="cta-row" style="justify-content:center">
-        <a class="btn btn-primary" id="signup-mail" href="mailto:info@quoteflowin.com?subject=QuoteFlowin%20Free%20trial%20%E2%80%93%20my%20workspace%20URL">Email info@quoteflowin.com</a>
-        <a class="btn btn-ghost" href="pricing.html">Back to pricing</a>
+        <a class="btn btn-primary" href="https://app.twenty.com/settings/applications/available/6fc1a9b8-000e-423a-a356-62a50ae7f81c" target="_blank" rel="noopener">Install in Twenty <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="docs.html">Setup guide</a>
       </div>
-      <p class="fine">14-day free trial or 10 quotes · No credit card</p>
+      <p class="fine">For Twenty Cloud. Twenty shows a notice that the app hasn't been reviewed yet; that's expected for new apps.<br>Self-hosted Twenty or need help? Email <a href="mailto:info@quoteflowin.com">info@quoteflowin.com</a>.</p>
     </div>
   </section>
 </main>
 <script>
   (function () {
-    var names = { trial: "Free trial", monthly: "Monthly plan", annual: "Annual plan", lifetime: "Early Bird Lifetime" };
+    var names = { monthly: "Monthly", annual: "Annual", lifetime: "Early Bird Lifetime" };
     var plan = new URLSearchParams(location.search).get("plan");
-    var name = names[plan] || names.trial;
-    document.getElementById("plan-label").textContent = name;
-    document.getElementById("plan-name").textContent = name;
-    // The plan travels in the subject and body, so each request arrives tagged with what was clicked.
-    var subject = "QuoteFlowin " + name + " – my workspace URL";
-    var body = "Plan: " + name + "\nTwenty workspace URL: \nTwenty Cloud or self-hosted: \n";
-    document.getElementById("signup-mail").href =
-      "mailto:info@quoteflowin.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    if (!names[plan]) return;
+    document.getElementById("plan-label").textContent = names[plan] + " plan";
+    document.getElementById("plan-name").textContent = names[plan];
+    document.getElementById("plan-note").style.display = "";
   })();
 </script>
 
