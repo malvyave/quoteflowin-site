@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QuoteFlowin · Quotes inside Twenty CRM</title>
-  <meta name="description" content="Itemized quotes on your CRM deals. Send a link, the client accepts, the deal is won. Works inside Twenty CRM.">
+  <title>QuoteFlowin · The quotation app for Twenty CRM</title>
+  <meta name="description" content="QuoteFlowin is the quotation app for Twenty CRM. Build itemized quotes on your deals, send a link, and when the client accepts, the deal is won.">
   <link rel="canonical" href="https://quoteflowin.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="QuoteFlowin">
-  <meta property="og:title" content="QuoteFlowin · Quotes inside Twenty CRM">
-  <meta property="og:description" content="Itemized quotes on your CRM deals. Send a link, the client accepts, the deal is won.">
+  <meta property="og:title" content="QuoteFlowin · The quotation app for Twenty CRM">
+  <meta property="og:description" content="Build itemized quotes on your Twenty deals, send a link, and when the client accepts, the deal is won.">
   <meta property="og:url" content="https://quoteflowin.com/">
   <meta name="theme-color" content="#09090b">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -23,6 +23,121 @@
   <script>document.documentElement.classList.add('js')</script>
   <script src="app.js" defer></script>
   <script src="demo.js" defer></script>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://quoteflowin.com/#org",
+   "name": "QuoteFlowin",
+   "url": "https://quoteflowin.com/",
+   "logo": "https://quoteflowin.com/apple-touch-icon.png",
+   "email": "info@quoteflowin.com",
+   "sameAs": [
+    "https://github.com/malvyave/quoteflow",
+    "https://www.npmjs.com/package/quoteflowin"
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://quoteflowin.com/#app",
+   "name": "QuoteFlowin",
+   "alternateName": "QuoteFlowin for Twenty",
+   "description": "QuoteFlowin is a quotation app for Twenty CRM. Build itemized quotes on Twenty deals, send the client a private link, and when they accept, the deal moves to your won stage with the quote total as its amount.",
+   "applicationCategory": "BusinessApplication",
+   "applicationSubCategory": "Quoting (CPQ) for Twenty CRM",
+   "operatingSystem": "Web (runs inside Twenty CRM, version 2.46 or later)",
+   "url": "https://quoteflowin.com/",
+   "installUrl": "https://quoteflowin.com/signup.html",
+   "softwareHelp": "https://quoteflowin.com/docs.html",
+   "featureList": [
+    "Line items with live subtotal, discount, tax and total",
+    "Quotes in the deal's currency",
+    "Branded quotes with logo, color, tax ID and payment instructions",
+    "Sequential quote numbers and valid-until dates",
+    "Private client link with online accept or decline, no client account needed",
+    "Shows when the client first opened the quote",
+    "Accepted quotes mark the Twenty deal won and set its amount",
+    "Quote events on the deal timeline",
+    "Board of all quotes by status",
+    "Client page prints to PDF"
+   ],
+   "isAccessibleForFree": false,
+   "publisher": {
+    "@id": "https://quoteflowin.com/#org"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Free trial",
+     "price": "0",
+     "priceCurrency": "USD",
+     "description": "14 days or 10 sent quotes, whichever comes first. No card needed.",
+     "url": "https://quoteflowin.com/pricing.html"
+    },
+    {
+     "@type": "Offer",
+     "name": "Monthly",
+     "price": "12",
+     "priceCurrency": "USD",
+     "description": "Unlimited quotes, per workspace, billed monthly.",
+     "url": "https://quoteflowin.com/pricing.html",
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "12",
+      "priceCurrency": "USD",
+      "billingDuration": 1,
+      "unitCode": "MON",
+      "referenceQuantity": {
+       "@type": "QuantitativeValue",
+       "value": 1,
+       "unitCode": "MON"
+      }
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Annual",
+     "price": "108",
+     "priceCurrency": "USD",
+     "description": "Unlimited quotes, per workspace, billed yearly ($9 a month).",
+     "url": "https://quoteflowin.com/pricing.html",
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "108",
+      "priceCurrency": "USD",
+      "billingDuration": 1,
+      "unitCode": "ANN",
+      "referenceQuantity": {
+       "@type": "QuantitativeValue",
+       "value": 1,
+       "unitCode": "ANN"
+      }
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Lifetime",
+     "price": "139",
+     "priceCurrency": "USD",
+     "description": "One-time payment for unlimited quotes. Limited to the first 75 workspaces.",
+     "url": "https://quoteflowin.com/pricing.html"
+    }
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://quoteflowin.com/#site",
+   "name": "QuoteFlowin",
+   "url": "https://quoteflowin.com/",
+   "publisher": {
+    "@id": "https://quoteflowin.com/#org"
+   }
+  }
+ ]
+}
+  </script>
 </head>
 <body>
 
@@ -55,7 +170,7 @@
           <span class="word serif" style="--i:5">the</span>
           <span class="word serif" style="--i:6">workarounds</span>
         </h1>
-        <p class="lead fade-up" style="--d:.7s">Itemized quotes on your CRM deals. Send a link, the client accepts, the deal is won.</p>
+        <p class="lead fade-up" style="--d:.7s"><strong class="lead-hl">The quotation app for Twenty CRM.</strong> Build itemized quotes on your deals, send a link, and when the client accepts, the deal is won.</p>
         <ul class="hero-checks fade-up" style="--d:.8s">
           <li>Free for 14 days or 10 quotes</li>
           <li>No credit card</li>
@@ -405,6 +520,14 @@
           <li><a href="docs.html">Getting started</a></li>
           <li><a href="pricing.html#faq">FAQ</a></li>
           <li><a href="mailto:info@quoteflowin.com">info@quoteflowin.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="twenty-crm-quotes.html">Create quotes in Twenty</a></li>
+          <li><a href="send-quote-twenty-crm.html">Send and get accepted</a></li>
+          <li><a href="twenty-crm-quoting-options.html">Quoting options compared</a></li>
         </ul>
       </div>
       <div>

@@ -21,6 +21,189 @@
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js')</script>
   <script src="app.js" defer></script>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://quoteflowin.com/#org",
+   "name": "QuoteFlowin",
+   "url": "https://quoteflowin.com/",
+   "logo": "https://quoteflowin.com/apple-touch-icon.png",
+   "email": "info@quoteflowin.com",
+   "sameAs": [
+    "https://github.com/malvyave/quoteflow",
+    "https://www.npmjs.com/package/quoteflowin"
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://quoteflowin.com/#app",
+   "name": "QuoteFlowin",
+   "alternateName": "QuoteFlowin for Twenty",
+   "description": "QuoteFlowin is a quotation app for Twenty CRM. Build itemized quotes on Twenty deals, send the client a private link, and when they accept, the deal moves to your won stage with the quote total as its amount.",
+   "applicationCategory": "BusinessApplication",
+   "applicationSubCategory": "Quoting (CPQ) for Twenty CRM",
+   "operatingSystem": "Web (runs inside Twenty CRM, version 2.46 or later)",
+   "url": "https://quoteflowin.com/",
+   "installUrl": "https://quoteflowin.com/signup.html",
+   "softwareHelp": "https://quoteflowin.com/docs.html",
+   "featureList": [
+    "Line items with live subtotal, discount, tax and total",
+    "Quotes in the deal's currency",
+    "Branded quotes with logo, color, tax ID and payment instructions",
+    "Sequential quote numbers and valid-until dates",
+    "Private client link with online accept or decline, no client account needed",
+    "Shows when the client first opened the quote",
+    "Accepted quotes mark the Twenty deal won and set its amount",
+    "Quote events on the deal timeline",
+    "Board of all quotes by status",
+    "Client page prints to PDF"
+   ],
+   "isAccessibleForFree": false,
+   "publisher": {
+    "@id": "https://quoteflowin.com/#org"
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Free trial",
+     "price": "0",
+     "priceCurrency": "USD",
+     "description": "14 days or 10 sent quotes, whichever comes first. No card needed.",
+     "url": "https://quoteflowin.com/pricing.html"
+    },
+    {
+     "@type": "Offer",
+     "name": "Monthly",
+     "price": "12",
+     "priceCurrency": "USD",
+     "description": "Unlimited quotes, per workspace, billed monthly.",
+     "url": "https://quoteflowin.com/pricing.html",
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "12",
+      "priceCurrency": "USD",
+      "billingDuration": 1,
+      "unitCode": "MON",
+      "referenceQuantity": {
+       "@type": "QuantitativeValue",
+       "value": 1,
+       "unitCode": "MON"
+      }
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Annual",
+     "price": "108",
+     "priceCurrency": "USD",
+     "description": "Unlimited quotes, per workspace, billed yearly ($9 a month).",
+     "url": "https://quoteflowin.com/pricing.html",
+     "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "108",
+      "priceCurrency": "USD",
+      "billingDuration": 1,
+      "unitCode": "ANN",
+      "referenceQuantity": {
+       "@type": "QuantitativeValue",
+       "value": 1,
+       "unitCode": "ANN"
+      }
+     }
+    },
+    {
+     "@type": "Offer",
+     "name": "Lifetime",
+     "price": "139",
+     "priceCurrency": "USD",
+     "description": "One-time payment for unlimited quotes. Limited to the first 75 workspaces.",
+     "url": "https://quoteflowin.com/pricing.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What does \"per workspace\" mean?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You pay once for your CRM workspace. Everyone in it can create and send quotes. No per-seat fees."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What's included in the free trial?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Line items, public quote links and client acceptance, free for 14 days or 10 sent quotes, whichever comes first. No credit card required."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do paid plans have a quote limit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Monthly, Annual and Lifetime all include unlimited quotes. Only the free trial is capped at 10."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How much do I save with Annual?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Annual is $9 per workspace per month, billed $108 a year. That's 25% less than paying $12 monthly."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What's the Early Bird Lifetime deal?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "One payment of $139 for unlimited quotes, forever, with no recurring fees. It's limited to the first 75 workspaces and will be removed once claimed. Lifetime is final sale, so try the free trial first."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I cancel anytime?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Monthly and Annual can be cancelled at any time in the billing portal, and you keep access until the end of the paid period. Annual comes with a 14-day refund window; Lifetime is final sale. See the Refund Policy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which CRMs does it work with?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Twenty CRM today, on Twenty Cloud and self-hosted. Attio and other CRMs are coming soon. A self-hosted Twenty server must be reachable from the internet so clients can open quote links."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where is my quote data stored?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In your own Twenty workspace, next to your deals. It's covered by your workspace's backups and permissions."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Something else?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Email info@quoteflowin.com. A real person will answer."
+     }
+    }
+   ]
+  }
+ ]
+}
+  </script>
 </head>
 <body>
 
@@ -202,6 +385,14 @@
           <li><a href="docs.html">Getting started</a></li>
           <li><a href="pricing.html#faq">FAQ</a></li>
           <li><a href="mailto:info@quoteflowin.com">info@quoteflowin.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="twenty-crm-quotes.html">Create quotes in Twenty</a></li>
+          <li><a href="send-quote-twenty-crm.html">Send and get accepted</a></li>
+          <li><a href="twenty-crm-quoting-options.html">Quoting options compared</a></li>
         </ul>
       </div>
       <div>

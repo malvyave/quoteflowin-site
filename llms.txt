@@ -1,0 +1,60 @@
+# QuoteFlowin
+
+> QuoteFlowin is a quotation app for Twenty CRM. You build itemized quotes on Twenty deals (opportunities), send the client a private link, and when the client accepts, the deal moves to your won stage with its amount set to the quote total. It installs into a Twenty workspace and keeps all quote data in that workspace.
+
+QuoteFlowin is an independent app by Anudeep Kaur. It is not made by or affiliated with Twenty.
+
+## What it does
+
+- Quote tab on every Twenty deal: line items with live subtotal, discount, tax and total, in the deal's currency, with a live preview of what the client sees.
+- Branded quotes: logo, brand color, address, contact details, tax ID (VAT, GST) and payment instructions. Addressed to the deal's company and contact.
+- Sequential quote numbers (Q-0001, Q-0002 ...), valid-until dates, a message to the client and default terms.
+- Send: a private link plus a ready-written email that opens in your own email app.
+- Client page: no account needed. The client accepts by typing their name, or declines with a reason. It prints to a tidy PDF.
+- Shows when the client first opened the quote. Sent, viewed, accepted and declined appear on the deal's timeline.
+- On acceptance: the deal moves to the won stage (default "Customer", configurable) and its amount is set to the quote total. Other open quotes on that deal are marked superseded.
+- Withdraw a sent quote to edit it, or revise and resend a declined one. A board shows all quotes by status with totals.
+
+## Limitations
+
+- Discount and tax apply to the whole quote, not to single lines.
+- QuoteFlowin writes the email but does not send it; it opens in your email app.
+- No e-signature or online payment of quotes yet.
+- On self-hosted Twenty, the server must be reachable from the internet for clients to open quote links.
+
+## Compatibility
+
+- Twenty CRM version 2.46 or later.
+- Twenty Cloud: install from the install page linked below.
+- Self-hosted Twenty: supported; email info@quoteflowin.com for install help.
+- Other CRMs (such as Attio): not yet.
+
+## Pricing
+
+Priced per Twenty workspace, not per user. Payments go through Dodo Payments.
+
+- Free trial: $0 for 14 days or 10 sent quotes, whichever comes first. No card needed.
+- Monthly: $12 per workspace per month. Unlimited quotes. Cancel anytime.
+- Annual: $108 per year ($9 per month). Unlimited quotes. 14-day refund window.
+- Lifetime: $139 one-time. Unlimited quotes. Limited to the first 75 workspaces. Non-refundable.
+
+## Data and permissions
+
+- Quotes and client details stay in your Twenty workspace, under its permissions and backups.
+- The app reads Companies and People, reads Opportunities and updates their stage and amount on acceptance, and writes its own Quotes, Quote line items and timeline events. It cannot see notes, emails or other records.
+- Client links use a long random secret, are hidden from search engines, and stop working when a quote is withdrawn.
+- No AI services process quote data.
+
+## Links
+
+- [Home](https://quoteflowin.com/): product overview and demo
+- [How it works](https://quoteflowin.com/how-it-works.html): the quote flow step by step
+- [Pricing and FAQ](https://quoteflowin.com/pricing.html)
+- [Docs: getting started, compatibility, security](https://quoteflowin.com/docs.html)
+- [Guide: how to create quotes in Twenty CRM](https://quoteflowin.com/twenty-crm-quotes.html)
+- [Guide: sending a quote and getting it accepted from Twenty](https://quoteflowin.com/send-quote-twenty-crm.html)
+- [Guide: quoting options for Twenty CRM compared](https://quoteflowin.com/twenty-crm-quoting-options.html)
+- [Install in Twenty](https://quoteflowin.com/signup.html)
+- [Source code (MIT)](https://github.com/malvyave/quoteflow)
+- [Terms](https://quoteflowin.com/terms.html), [Privacy](https://quoteflowin.com/privacy.html), [Refunds](https://quoteflowin.com/refund.html)
+- Support: info@quoteflowin.com

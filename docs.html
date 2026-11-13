@@ -21,6 +21,38 @@
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js')</script>
   <script src="app.js" defer></script>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://quoteflowin.com/#org",
+   "name": "QuoteFlowin",
+   "url": "https://quoteflowin.com/",
+   "logo": "https://quoteflowin.com/apple-touch-icon.png",
+   "email": "info@quoteflowin.com",
+   "sameAs": [
+    "https://github.com/malvyave/quoteflow",
+    "https://www.npmjs.com/package/quoteflowin"
+   ]
+  },
+  {
+   "@type": "TechArticle",
+   "headline": "Getting started with QuoteFlowin for Twenty CRM",
+   "description": "Install QuoteFlowin in Twenty, set up your company details, and send your first quote from a deal.",
+   "url": "https://quoteflowin.com/docs.html",
+   "dateModified": "2026-11-13",
+   "about": {
+    "@id": "https://quoteflowin.com/#app"
+   },
+   "publisher": {
+    "@id": "https://quoteflowin.com/#org"
+   }
+  }
+ ]
+}
+  </script>
 </head>
 <body>
 
@@ -44,7 +76,10 @@
       <a href="#first-quote">Create your first quote</a>
       <a href="#send">Send it</a>
       <a href="#accept">When the client accepts</a>
+      <a href="#compatibility">Compatibility</a>
+      <a href="#security">Security and your data</a>
       <a href="#limits">Current limitations</a>
+      <a href="#guides">Guides</a>
       <a href="#help">Get help</a>
     </nav>
 
@@ -100,11 +135,43 @@
       </ul>
       <p>If they decline, you'll see their reason and can <strong>Revise and resend</strong>.</p>
 
+      <h2 id="compatibility">Compatibility</h2>
+      <div class="compare-wrap">
+        <table class="compare">
+          <thead><tr><th></th><th>Supported</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Twenty Cloud</td><td class="yes">Yes</td><td>Install from the <a href="signup.html?plan=trial">install page</a>.</td></tr>
+            <tr><td>Self-hosted Twenty</td><td class="yes">Yes</td><td>Your server must be reachable from the internet. Email <a href="mailto:info@quoteflowin.com">info@quoteflowin.com</a> for install help.</td></tr>
+            <tr><td>Twenty version</td><td>2.46 or later</td><td>Older versions can't run the app.</td></tr>
+            <tr><td>Currencies</td><td class="yes">Yes</td><td>Quotes use the deal's currency.</td></tr>
+            <tr><td>Other CRMs</td><td class="no">Not yet</td><td>Attio and others are planned.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="security">Security and your data</h2>
+      <ul>
+        <li><strong>Your data stays in Twenty.</strong> Quotes and client details live in your Twenty workspace, under its permissions and backups. They aren't copied elsewhere, and you can delete them in Twenty at any time.</li>
+        <li><strong>Limited access.</strong> QuoteFlowin reads and writes its own Quotes and Quote line items. It reads Companies and People to address the quote, reads Opportunities and updates their stage and amount when a quote is accepted, and adds quote events to the timeline. It can't see notes, emails or other records.</li>
+        <li><strong>Member permissions apply.</strong> In the Quote tab, QuoteFlowin never does more than the signed-in member is allowed to.</li>
+        <li><strong>Private client links.</strong> Each link uses a long random secret, is hidden from search engines, and stops working when the quote is withdrawn.</li>
+        <li><strong>Billing.</strong> On Twenty Cloud, Dodo Payments receives your workspace ID and, when you open checkout, your name and email. No quote data is shared, and no AI services are involved.</li>
+        <li><strong>Open source.</strong> The code is public on <a href="https://github.com/malvyave/quoteflow">GitHub</a> under the MIT license.</li>
+      </ul>
+      <p>Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
       <h2 id="limits">Current limitations</h2>
       <ul>
         <li>Discount and tax apply to the whole quote, not individual lines.</li>
         <li>QuoteFlowin writes the email but doesn't send it. It opens in your email app so replies come to you.</li>
         <li>No e-signature or online payment yet.</li>
+      </ul>
+
+      <h2 id="guides">Guides</h2>
+      <ul>
+        <li><a href="twenty-crm-quotes.html">How to create quotes in Twenty CRM</a></li>
+        <li><a href="send-quote-twenty-crm.html">How to send a quote and get it accepted</a></li>
+        <li><a href="twenty-crm-quoting-options.html">Quoting options for Twenty CRM, compared</a></li>
       </ul>
 
       <h2 id="help">Get help</h2>
@@ -134,6 +201,14 @@
           <li><a href="docs.html">Getting started</a></li>
           <li><a href="pricing.html#faq">FAQ</a></li>
           <li><a href="mailto:info@quoteflowin.com">info@quoteflowin.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="twenty-crm-quotes.html">Create quotes in Twenty</a></li>
+          <li><a href="send-quote-twenty-crm.html">Send and get accepted</a></li>
+          <li><a href="twenty-crm-quoting-options.html">Quoting options compared</a></li>
         </ul>
       </div>
       <div>
